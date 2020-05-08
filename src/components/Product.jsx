@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import {getAllProducts} from '../services/api';
+import React from 'react';
 
-export default function Product() {
-    const[products,setProducts]=useState([]);
-
-    getAllProducts().then(data=>{
-        setProducts(data.data[0].name) ;
-             // console.log(data.topics)  
-     })
+export default function Product(props) {
+    const{name,description,picture,price}=props.product;
+    
      
     return (
-        <div>
-            <p>hello, {products}</p>
+        <div className='product'>
+            <img src={picture} style={{width:'250px',height:'250px'}}/>
+            <div>
+                <p>{name}</p>
+                <p>{description}</p>
+                <p>{price}$</p>
+            </div>
+            
         </div>
     );
-
-    }
+}
