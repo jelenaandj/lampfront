@@ -1,18 +1,22 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 
 export default function Product(props) {
-    const{name,description,picture,price}=props.product;
+    const{name,picture,price,_id}=props.product;
     
      
     return (
-        <div className='product'>
-            <img src={picture} style={{width:'250px',height:'250px'}}/>
-            <div>
-                <p>{name}</p>
-                <p>{description}</p>
-                <p>{price}$</p>
-            </div>
+        <Link to={`/products/${_id}`}>
+            <div className='product'>
+                <img src={picture} style={{width:'200px',height:'200px'}}/>
+                <div>
+                    <p>{name}</p>
+                    <p>{price}$</p>
+                </div>
             
-        </div>
+            </div>
+        </Link>
+
     );
 }

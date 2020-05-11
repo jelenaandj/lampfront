@@ -1,13 +1,21 @@
 import React from 'react';
 import './App.css';
-import Product from './components/Product';
-import ProductList from './components/ProductList';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar';
+import Main from './layout/Main';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <ProductList/>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar/>
+        <Main/>
+      </div>
+    </Router>
   );
 }
 
