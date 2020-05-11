@@ -1,11 +1,11 @@
 /* navbar */
-.navbar{
+/* .navbar{
   display: grid;
   grid-column-gap: 1%;
   grid-template-columns: 10% 10% 10% 10% 10% 10%;
 
   border: 1px solid purple;
-}
+} */
 
 
 
@@ -27,3 +27,14 @@
   margin: 1%;
 }
 
+.login, .register{
+  width: 30%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.logo{
+  justify-content: center;
+  margin: auto;
+  width: 30%;
+}

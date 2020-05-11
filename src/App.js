@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
+import NavBar from './components/NavBar';
 import Main from './layout/Main';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 
 
@@ -11,10 +11,10 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Navbar/>
-        <Main/>
-      </div>
+        <div className="App">
+          <NavBar/>
+          <Main/>
+        </div>
     </Router>
   );
 }

@@ -11,7 +11,8 @@ export default function ProductList() {
             setProducts(data.data);
          });
     },[]);
-    console.log(products);
+    
+    // console.log(products);
 
     
     return (

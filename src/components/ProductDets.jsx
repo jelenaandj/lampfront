@@ -12,12 +12,14 @@ export default function ProductDets({match}) {
         });
     },[]);
 
+    const{name,description, price}=product;
+
     return (
         <div>
-            <img src={product.picture} style={{width:'200px',height:'200px'}}/>
-            <p>{product.name}</p>
-            <p>{}</p>
-            <p>{}</p>
+            <img src={product.picture} style={{width:'500px',height:'500px'}}/>
+            <p>{name}</p>
+            <p>{price}</p>
+            <p>{description}</p>
             <p>{}</p>
         </div>
     )

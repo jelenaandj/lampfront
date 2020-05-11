@@ -7,24 +7,25 @@ import Login from '../components/Login';
 import PrivateRoute from './PrivateRoute';
 import Register from '../components/Register';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Home from '../components/Home';
 
 
 
 export default function Main() {
     return (
-        // <Switch>
             <div>
-                <Route exact path='/' component={About} />
-                <Route exact path='/products' component={ProductList} />
-                <Route path='/products/:id' component={ProductDets}/>
-                <Route path='/contact' component={Contact} />
-                <Route path='/login' component={Login}/>
-                <Route path='/register' component={Register}/>
-                <Route path='/cart' component={PrivateRoute}/>
-            </div>
-        // </Switch>
+                <Switch>
+                    <Route exact path='/' component={Home} />
+                    <Route exact path='/about' component={About} />
+                    <Route exact path='/products' component={ProductList} />
+                    <Route path='/products/:id' component={ProductDets}/>
+                    <Route path='/contact' component={Contact} />
+                    <Route path='/login' component={Login}/>
+                    <Route path='/register' component={Register}/>
+                    <Route path='/cart' component={PrivateRoute}/>
+                </Switch>
 
-        // </Router>
+            </div>
         
     );
 }
