@@ -13,7 +13,7 @@ export default function ProductList (props){
     },[]);
     
     
-    console.log(props.location.sale);
+    // console.log(props.location.sale);
 
 
     

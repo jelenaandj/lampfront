@@ -16,7 +16,7 @@ export default function ProductDets({match}) {
 
     return (
         <div>
-            <img src={product.picture} style={{width:'500px',height:'500px'}}/>
+            <img src={product.picture} alt={'img'} style={{width:'500px',height:'500px'}}/>
             <p>{name}</p>
             <p>{price}$</p>
             <p>{description}</p>
