@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Container from 'react-bootstrap/Container';
 
 export default function About() {
     return (
         <div>
-            <h1>about</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente molestiae nulla eligendi illo impedit quia aliquam sequi consequuntur voluptate pariatur perspiciatis, 
-                soluta similique odio accusantium. Numquam sapiente ducimus incidunt?</p>
+            <Jumbotron fluid>
+                <Container>
+                    <h1>Fluid jumbotron</h1>
+                    <p>
+                    This is a modified jumbotron that occupies the entire horizontal space of
+                    its parent.
+                    </p>
+                </Container>
+            </Jumbotron>
         </div>
     )
 }

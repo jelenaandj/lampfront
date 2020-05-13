@@ -7,8 +7,46 @@
   border: 1px solid purple;
 } */
 
+.mr-auto :link{
+  text-decoration: none;
+  color: inherit;
+  /* padding: 5%; */
+  margin-left: 10%;
+  font-size: larger;
+}
+.home{
+  background-image: "cosy.jpg";
+}
+.jumbo{
+  justify-content: center;
+  margin: auto;
+  width: 30%;
+  margin-top: 10%;
+} 
+.jumbo p{
+  justify-content: center;
+  margin: auto;
+  margin: 10%;
 
+}
+.jumbo button{
+  margin-left: 15%;
+}
+.jumbo button :link{
+  text-decoration: none;
+}
 
+.nav :link{
+  text-decoration: none;
+  color: inherit;
+  /* padding: 5%; */
+  width: fit-content;
+  margin-left: 15%;
+  font-size: larger;
+}
+.navbar-nav{
+  width: 12%;
+}
 
 .product{
   border: 1px solid black;
@@ -36,7 +74,7 @@
 .logo{
   justify-content: center;
   margin: auto;
-  width: 30%;
+  width: 20%;
 }
 .table-cart{
   width: 30%;
