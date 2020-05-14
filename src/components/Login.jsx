@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import {login} from '../services/api';
 
 export default function Login() {
 
@@ -8,12 +9,13 @@ export default function Login() {
     const[password,setPassword]=useState('');
 
     const handleLogin=()=>{
+        login(email,password).then(data=>console.log(data));
 
     }
 
     return (
         <div className='login'>
-            <Form>
+            <Form onSubmit={e=> e.preventDefault()}>
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" onInput={e => {setEmail(e.target.value)}}  />

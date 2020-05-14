@@ -16,14 +16,25 @@ export default function Register() {
     const[token,setToken]=useState();
 
     function handleSubmit(e){
+        e.preventDefault();
+        console.log('aaaaaaa');
         if(confirmPassword === password){
+        console.log('bbbbbbbb');
         //     return
         try {
-            register ({name,email,password}).then(data=> {
-                console.log(data.message)
+        console.log('ccccc');
+
+            register({name,email,password}).then(data=> {
+                console.log('dddddddddd');
+
+                console.log(data.message);
             });
+        console.log('iiiiiiiiiii');
+
         } catch (error) {
             console.log(error.message);
+        console.log('jjjjjjjjjjjjj');
+
         }
         }
        }
