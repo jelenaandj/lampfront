@@ -2,15 +2,42 @@ import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import {login} from '../services/api';
+import {tokenLogin} from '../services/tokens';
+import { useHistory  } from 'react-router-dom';
+
 
 export default function Login() {
 
-    const[email,setEmail]=useState('');
-    const[password,setPassword]=useState('');
+    const[email,setEmail]=useState();
+    const[password,setPassword]=useState();
+    let history = useHistory();
 
-    const handleLogin=()=>{
-        login(email,password).then(data=>console.log(data));
+    ///
+    // await login(email,password).then(data=> tokenLogin(data.token));
+    // isTokenLogin();
+    // console.log(isTokenLogin());
+    // history.push('/products');
+    // window.location.reload(false);
+    ///send true so nav could render
+    ///
 
+    const handleLogin=async()=>{
+        try {
+            await login(email,password).then(data=>
+            {console.log(data)
+            if(data.success==false){
+                alert(data.message);
+            }else{
+                tokenLogin(data.token);
+                console.log(data.token);
+                history.push('/products');
+                window.location.reload(false);
+            }});
+        } catch (error) {
+            alert(error.message);
+        }
+       
+        
     }
 
     return (

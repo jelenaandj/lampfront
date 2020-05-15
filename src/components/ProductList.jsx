@@ -18,10 +18,10 @@ export default function ProductList (props){
 
     
     return (
-        <div className='product-list'>
+        <div className='product-list' >
            {props.location.sale?
-            products.filter(product=>product.sale).map(product=> <Product product={product} key={product._id}/>):
-            products.map(product=> <Product product={product} key={product._id}/>)
+            products.filter(product=>product.sale).map(product=> <Product  product={product} key={product._id}/>):
+            products.map(product=> <Product product={product}  key={product._id} />)
             }
         </div>
     );

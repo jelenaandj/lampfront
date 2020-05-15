@@ -2,40 +2,42 @@ import React, { useState} from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import {register} from '../services/api';
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 
 export default function Register() {
-    const[name,setName]=useState('');
-    const[email,setEmail]=useState('');
-    const[password,setPassword]=useState('');
-    const[confirmPassword,setConfirmPassword]=useState('');
-    const[issamePass,setIsSamePass]=useState('');
-    const history = useHistory();
+    const[name,setName]=useState();
+    const[email,setEmail]=useState();
+    const[password,setPassword]=useState();
+    const[confirmPassword,setConfirmPassword]=useState();
+    // const[issamePass,setIsSamePass]=useState('');
+    // const history = useHistory();
 
-    const[token,setToken]=useState();
 
     function handleSubmit(e){
         e.preventDefault();
-        console.log('aaaaaaa');
+        // console.log('aaaaaaa');
         if(confirmPassword === password){
-        console.log('bbbbbbbb');
+        // console.log('bbbbbbbb');
         //     return
         try {
-        console.log('ccccc');
+        // console.log('ccccc');
 
             register({name,email,password}).then(data=> {
-                console.log('dddddddddd');
-
-                console.log(data.message);
+                // console.log(data);
+                if(data.success==false){
+                    alert(data.message);
+                }
             });
-        console.log('iiiiiiiiiii');
+        // console.log('iiiiiiiiiii');
 
         } catch (error) {
-            console.log(error.message);
-        console.log('jjjjjjjjjjjjj');
+            alert(error.message);
+        // console.log('jjjjjjjjjjjjj');
 
         }
+        }else{
+            alert('Password does not match Confirm password');
         }
        }
         // console.log(token);

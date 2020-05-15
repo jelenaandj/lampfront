@@ -6,11 +6,9 @@ import ProductDets from '../components/ProductDets';
 import Login from '../components/Login';
 import PrivateRoute from './PrivateRoute';
 import Register from '../components/Register';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import Home from '../components/Home';
 import Cart from '../components/Cart';
-
-
 
 export default function Main() {
     return (
@@ -23,7 +21,7 @@ export default function Main() {
                     <Route path='/contact' component={Contact} />
                     <Route path='/login' component={Login}/>
                     <Route path='/register' component={Register}/>
-                    <Route path='/cart' component={Cart}/>
+                    <PrivateRoute path='/cart' component={Cart}/>
                 </Switch>
 
             </div>

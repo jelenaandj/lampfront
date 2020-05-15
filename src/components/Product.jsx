@@ -7,17 +7,19 @@ export default function Product(props) {
     
      
     return (
-        <Link to={`/products/${_id}`}>
+        <div className='product-box'>
+        <Link to={`/products/${_id}`} style={{color:'black',textDecoration:'none'}}>
             <div className='product'>
                 <img src={picture} alt={'img'}style={{width:'200px',height:'200px'}}/>
                 <div>
                     <p>{name}</p>
-                    <p>{price}$</p>
-                    <p>{sale? `${sale}% discount at the check out`: ''}</p>
+                    <p>Current price: {price}$</p>
+                    <p style={{color:'red'}}>{sale? `${sale}% discount`: ''}</p>
                 </div>
             
             </div>
         </Link>
+        </div>
 
     );
 }

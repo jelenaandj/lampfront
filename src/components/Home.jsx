@@ -1,22 +1,26 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button';
 import {Link} from 'react-router-dom';
 
-
-
 export default function Home() {
+
     return (
-        <div className='home'>
-            <Jumbotron className='jumbo'>
-                    <p>
-                        See our products on sale 
-                            <Button variant="primary" type="submit">
+        <div className='home' >
+            <Card className="text-center">
+                    <Card.Body>
+                        <Card.Title>NEW</Card.Title>
+                            <Card.Text>
+                            Check out our products on sale.
+                            </Card.Text>
+                            <Button variant="info" >
                                 
-                                <Link to={{pathname:'/products', sale:'true'}}>HERE</Link>  
+                                <Link to={{pathname:'/products', sale:'true'}} 
+                                    style={{color:'white',textDecoration:'none'}}>HERE
+                                </Link>  
                             </Button>
-                    </p>
-            </Jumbotron>
+                    </Card.Body>
+            </Card>
         </div>
     )
 }

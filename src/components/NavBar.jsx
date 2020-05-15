@@ -1,13 +1,24 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link,useHistory} from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import {isTokenLogin,tokenLogout} from '../services/tokens';
+import Button from 'react-bootstrap/Button';
 
 
 export default function NavBar() {
+//  const[changeDisplay, setChangeDisplay]=useState(false);
+let history = useHistory();
+
+
+  const handleLogOut=(e)=>{
+    tokenLogout(e);
+    history.push('/');
+
+  }
+
     return (
-        <div className='navbar'>
+        <div className='navbar' >
           <Navbar  sticky="top"  expand="lg" variant="light" bg="light" style={{width:'100%', height:'130px'}}>
             <Nav  className="mr-auto">
               <Link to='/about'>
@@ -21,19 +32,26 @@ export default function NavBar() {
               </Link>
             </Nav> 
             <div className='logo'>
-            <img src='lamplogo.webp' style={{width:'70px',height:'50px'}}/>
+            <img src='lamplogo.webp' alt='img' style={{width:'70px',height:'50px'}}/>
             <h3>Lamp <br/> Shop</h3>
             </div>
-              <Nav  className='nav'>
+              <Nav   className='nav'>
+              {!isTokenLogin() ?
+                <>
                 <Link  to='/login'>
                   <li>Log in</li>
                 </Link>
                 <Link  to='/register'>
                   <li>Register</li>
                 </Link>
-                {/* <Link  to='/cart'>
-                  <li>Cart</li>
-                </Link> */}
+                </>
+                :
+                <>
+               <Link style={{marginRight:'20px'}} to='/cart'>
+                  <li >Cart</li>
+                </Link>
+                <Button  variant="outline-danger" onClick={handleLogOut} >Log out</Button>
+                </>}
               </Nav>
           </Navbar>
         </div>
