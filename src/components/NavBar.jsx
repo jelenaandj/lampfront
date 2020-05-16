@@ -4,11 +4,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {isTokenLogin,tokenLogout} from '../services/tokens';
 import Button from 'react-bootstrap/Button';
+import {CartContext} from '../App';
+import { useContext } from 'react';
+
 
 
 export default function NavBar() {
 //  const[changeDisplay, setChangeDisplay]=useState(false);
 let history = useHistory();
+const{cart}=useContext(CartContext);
 
 
   const handleLogOut=(e)=>{
@@ -49,6 +53,8 @@ let history = useHistory();
                 <>
                <Link style={{marginRight:'20px'}} to='/cart'>
                   <li >Cart</li>
+                <p style={{color:'red', fontWeight:'bold',fontSize:'smaller'}}>
+                  {cart.length}</p>
                 </Link>
                 <Button  variant="outline-danger" onClick={handleLogOut} >Log out</Button>
                 </>}

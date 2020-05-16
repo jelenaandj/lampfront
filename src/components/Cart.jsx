@@ -1,15 +1,15 @@
 import React from 'react';
-// import Table from 'react-bootstrap/Table';
 import { getUser } from '../services/api';
-import { useEffect } from 'react';
+import { useContext} from 'react';
 import { isTokenLogin } from '../services/tokens';
-import { useState } from 'react';
 import CartItem from './CartItem';
+import {CartContext} from '../App';
+import Button from 'react-bootstrap/Button';
+
 
 export default function Cart() {
-    const[cart,setCart]=useState([]);
     let total=0;
-
+    const{cart,setCart}=useContext(CartContext);
 //    useEffect(()=>{
        const token=isTokenLogin();
         getUser(token).then(data=>setCart(data.data.cart))
@@ -23,6 +23,7 @@ export default function Cart() {
             <div>
                 Total: {total}$
             </div>
+            <Button variant="success" type="submit">Buy</Button>
         </div>
     );
 }
