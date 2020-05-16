@@ -95,6 +95,13 @@
   grid-template-columns: 40%  40%;
   margin: 5%;
 }
+.cart-table{
+  width: 40% !important;
+}
+td{
+  width: fit-content;
+  /* padding: 5px !important; */
+}
 
 .footer{
   position: fixed;

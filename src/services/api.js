@@ -2,6 +2,7 @@ const BASE_URL = 'http://localhost:5000';
 const PRODUCTS='/api/products';
 const REGISTER='/api/user/register';
 const LOGIN='/api/user/login';
+const USER='/api/user';
 
 export const getAllProducts = () => {
     return fetch(`${BASE_URL}${PRODUCTS}`)
@@ -20,9 +21,9 @@ export const register=(user)=>{
       'Content-Type':'application/json; charset=UTF-8' 
   },
     method:'POST',
-    body:JSON.stringify(user)}).then(res => res.json());
-  
+    body:JSON.stringify(user)}).then(res => res.json()); 
 }
+
 export const login=(email,password)=>{
   return fetch (`${BASE_URL}${LOGIN}`,{
     method: 'POST',
@@ -37,3 +38,11 @@ export const login=(email,password)=>{
     return response.json();
 })
 ;}
+
+export const getUser=(token)=>{
+  return fetch(`${BASE_URL}${USER}`, {
+    method:'GET' ,
+    headers:{
+      'Content-Type':'application/json; charset=UTF-8' ,
+      'auth-token':token 
+  }}) .then(res => res.json());}

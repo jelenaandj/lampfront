@@ -2,7 +2,7 @@ import React, { useState} from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import {register} from '../services/api';
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 
 export default function Register() {
@@ -11,7 +11,7 @@ export default function Register() {
     const[password,setPassword]=useState();
     const[confirmPassword,setConfirmPassword]=useState();
     // const[issamePass,setIsSamePass]=useState('');
-    // const history = useHistory();
+    const history = useHistory();
 
 
     function handleSubmit(e){
@@ -30,11 +30,12 @@ export default function Register() {
                 }
             });
         // console.log('iiiiiiiiiii');
+        history.push('/login');
 
         } catch (error) {
             alert(error.message);
         // console.log('jjjjjjjjjjjjj');
-
+           
         }
         }else{
             alert('Password does not match Confirm password');
