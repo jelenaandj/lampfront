@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://lamp-shop.herokuapp.com';
 const PRODUCTS='/api/products';
 const REGISTER='/api/user/register';
 const LOGIN='/api/user/login';
