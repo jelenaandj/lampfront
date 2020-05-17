@@ -32,7 +32,7 @@ export default function Cart() {
             let empty=[];
             setCart(empty);
             alert('Thank you for shopping with us')
-            updateCart(empty);
+            updateCart(token,empty);
         }
     }
 

@@ -21,7 +21,7 @@ const cartContextValue={
 }
 
   return (
-    <Router>
+    <Router basename='/lampfront'>
         <div className="App">
           <CartContext.Provider value={cartContextValue}>
             <NavBar/>
