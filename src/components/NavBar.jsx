@@ -51,12 +51,14 @@ const{cart}=useContext(CartContext);
                 </>
                 :
                 <>
-               <Link style={{marginRight:'20px'}} to='/cart'>
-                  <li >Cart</li>
-                <p style={{color:'red', fontWeight:'bold',fontSize:'smaller'}}>
-                { cart!==null? cart.length : ''}</p>
+               <Link style={{marginRight:'10px'}} to='/cart'>
+                  <li ><img src='cart.png' alt='img' style={{width:'40px'}}></img>
+                  <label style={{color:'red', fontWeight:'bold',fontSize:'smaller'}}>
+                { cart!==null? cart.length : ''}</label>
+                  </li>
+                
                 </Link>
-                <Button  variant="outline-danger" onClick={handleLogOut} >Log out</Button>
+                <Button  variant="outline-danger" onClick={handleLogOut} style={{height:'50px'}} >Log out</Button>
                 </>}
               </Nav>
           </Navbar>

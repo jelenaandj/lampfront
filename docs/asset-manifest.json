@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/lampfront/static/css/main.bb8e7bf0.chunk.css",
-    "main.js": "/lampfront/static/js/main.3e66c5c9.chunk.js",
-    "main.js.map": "/lampfront/static/js/main.3e66c5c9.chunk.js.map",
+    "main.css": "/lampfront/static/css/main.8eb8796d.chunk.css",
+    "main.js": "/lampfront/static/js/main.6e990f4b.chunk.js",
+    "main.js.map": "/lampfront/static/js/main.6e990f4b.chunk.js.map",
     "runtime-main.js": "/lampfront/static/js/runtime-main.18feb02a.js",
     "runtime-main.js.map": "/lampfront/static/js/runtime-main.18feb02a.js.map",
     "static/css/2.69121389.chunk.css": "/lampfront/static/css/2.69121389.chunk.css",
     "static/js/2.726494dd.chunk.js": "/lampfront/static/js/2.726494dd.chunk.js",
     "static/js/2.726494dd.chunk.js.map": "/lampfront/static/js/2.726494dd.chunk.js.map",
     "index.html": "/lampfront/index.html",
-    "precache-manifest.5207d55e9d7b0bf094e0462651ab0445.js": "/lampfront/precache-manifest.5207d55e9d7b0bf094e0462651ab0445.js",
+    "precache-manifest.a191dca299f2ba756439edb073bf9438.js": "/lampfront/precache-manifest.a191dca299f2ba756439edb073bf9438.js",
     "service-worker.js": "/lampfront/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/lampfront/static/css/2.69121389.chunk.css.map",
-    "static/css/main.bb8e7bf0.chunk.css.map": "/lampfront/static/css/main.bb8e7bf0.chunk.css.map",
+    "static/css/main.8eb8796d.chunk.css.map": "/lampfront/static/css/main.8eb8796d.chunk.css.map",
     "static/js/2.726494dd.chunk.js.LICENSE.txt": "/lampfront/static/js/2.726494dd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.18feb02a.js",
     "static/css/2.69121389.chunk.css",
     "static/js/2.726494dd.chunk.js",
-    "static/css/main.bb8e7bf0.chunk.css",
-    "static/js/main.3e66c5c9.chunk.js"
+    "static/css/main.8eb8796d.chunk.css",
+    "static/js/main.6e990f4b.chunk.js"
   ]
 }

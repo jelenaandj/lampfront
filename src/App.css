@@ -108,3 +108,17 @@ td{
   right: 0;
   bottom: 0;
 }
+@media (max-width: 1300px) {
+  .product{
+    padding-left: 0;
+    display: grid;
+    grid-column-gap: 1%;
+    grid-template-columns: 50%  ;
+  }
+  .productDets{
+    padding-left: 0;
+    display: grid;
+    grid-column-gap: 1%;
+    grid-template-columns: 50%  ;
+  }
+}
