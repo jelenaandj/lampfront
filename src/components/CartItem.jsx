@@ -21,7 +21,7 @@ export default function CartItem(props) {
             let deleted=cart.find(product=>product._id===_id)
             let index = cart.indexOf(deleted);
             if (index > -1) {
-                cart.splice(deleted, 1);
+                cart.splice(index, 1);
                 setCart(cart)
                 updateCart(token,cart);
                 setDeleted(true);
