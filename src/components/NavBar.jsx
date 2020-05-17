@@ -54,7 +54,7 @@ const{cart}=useContext(CartContext);
                <Link style={{marginRight:'20px'}} to='/cart'>
                   <li >Cart</li>
                 <p style={{color:'red', fontWeight:'bold',fontSize:'smaller'}}>
-                  {cart.length}</p>
+                { cart!==null? cart.length : ''}</p>
                 </Link>
                 <Button  variant="outline-danger" onClick={handleLogOut} >Log out</Button>
                 </>}
