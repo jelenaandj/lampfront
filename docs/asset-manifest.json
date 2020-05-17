@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lampfront/static/css/main.bb8e7bf0.chunk.css",
-    "main.js": "/lampfront/static/js/main.a6d90254.chunk.js",
-    "main.js.map": "/lampfront/static/js/main.a6d90254.chunk.js.map",
+    "main.js": "/lampfront/static/js/main.3e66c5c9.chunk.js",
+    "main.js.map": "/lampfront/static/js/main.3e66c5c9.chunk.js.map",
     "runtime-main.js": "/lampfront/static/js/runtime-main.18feb02a.js",
     "runtime-main.js.map": "/lampfront/static/js/runtime-main.18feb02a.js.map",
     "static/css/2.69121389.chunk.css": "/lampfront/static/css/2.69121389.chunk.css",
     "static/js/2.726494dd.chunk.js": "/lampfront/static/js/2.726494dd.chunk.js",
     "static/js/2.726494dd.chunk.js.map": "/lampfront/static/js/2.726494dd.chunk.js.map",
     "index.html": "/lampfront/index.html",
-    "precache-manifest.14e16122f79e4641e1243eab4b36ae1b.js": "/lampfront/precache-manifest.14e16122f79e4641e1243eab4b36ae1b.js",
+    "precache-manifest.5207d55e9d7b0bf094e0462651ab0445.js": "/lampfront/precache-manifest.5207d55e9d7b0bf094e0462651ab0445.js",
     "service-worker.js": "/lampfront/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/lampfront/static/css/2.69121389.chunk.css.map",
     "static/css/main.bb8e7bf0.chunk.css.map": "/lampfront/static/css/main.bb8e7bf0.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.69121389.chunk.css",
     "static/js/2.726494dd.chunk.js",
     "static/css/main.bb8e7bf0.chunk.css",
-    "static/js/main.a6d90254.chunk.js"
+    "static/js/main.3e66c5c9.chunk.js"
   ]
 }

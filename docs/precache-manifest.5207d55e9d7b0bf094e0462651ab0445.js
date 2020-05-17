@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0339d05629af6302f8bc26ed8704bc05",
+    "revision": "78ffbc3a89762d1bff5d4e6773769ed6",
     "url": "/lampfront/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lampfront/static/css/2.69121389.chunk.css"
   },
   {
-    "revision": "73e0cf2910f36616fb6d",
+    "revision": "9c511bbe00a7fc29a7b8",
     "url": "/lampfront/static/css/main.bb8e7bf0.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lampfront/static/js/2.726494dd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "73e0cf2910f36616fb6d",
-    "url": "/lampfront/static/js/main.a6d90254.chunk.js"
+    "revision": "9c511bbe00a7fc29a7b8",
+    "url": "/lampfront/static/js/main.3e66c5c9.chunk.js"
   },
   {
     "revision": "0eb5017b6e80f64bc683",

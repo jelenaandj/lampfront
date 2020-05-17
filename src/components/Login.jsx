@@ -31,7 +31,7 @@ export default function Login() {
                 tokenLogin(data.token);
                 console.log(data.token);
                 history.push('/products');
-                window.location.reload(false);
+                // window.location.reload(false);
             }});
         } catch (error) {
             alert(error.message);
