@@ -102,6 +102,14 @@ td{
   width: 50px;
   /* padding: 5px !important; */
 }
+.product-img{
+  width: 200px;
+  height: 200px;
+}
+.dets-img{
+  width: 400px;
+  height: 400px;
+}
 
 .footer{
   position: fixed;
@@ -115,10 +123,25 @@ td{
     grid-column-gap: 1%;
     grid-template-columns: 50%  ;
   }
+ 
   .productDets{
     padding-left: 0;
     display: grid;
     grid-column-gap: 1%;
     grid-template-columns: 50%  ;
+  }
+}
+@media (max-width: 800px) {
+
+  .product-img{
+    width:80px;
+    height: 80px;
+  }
+  .dets-img{
+    width: 200px;
+    height: 200px;
+  }
+  .navbar{
+    font-size: smaller;
   }
 }

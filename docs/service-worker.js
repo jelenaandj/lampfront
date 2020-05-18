@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/lampfront/precache-manifest.a191dca299f2ba756439edb073bf9438.js"
+  "/lampfront/precache-manifest.e2512b726da54106a385c4e0bb7c1306.js"
 );
 
 self.addEventListener('message', (event) => {

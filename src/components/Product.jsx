@@ -10,7 +10,7 @@ export default function Product(props) {
         <div className='product-box'>
         <Link to={`/products/${_id}`} style={{color:'black',textDecoration:'none'}}>
             <div className='product'>
-                <img src={picture} alt={'img'}style={{width:'200px',height:'200px'}}/>
+                <img className='product-img' src={picture} alt={'img'}/>
                 <div>
                     <p>{name}</p>
                     <p>Current price: {price}$</p>

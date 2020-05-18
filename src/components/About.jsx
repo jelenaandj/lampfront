@@ -9,7 +9,10 @@ export default function About() {
                 <Container>
                     <h1>ABOUT US</h1>
                     <p>
-                    Bringing light into homes since 1998.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Rem repellendus ad aliquam deleniti voluptatem. 
+                    Pariatur, impedit! Animi consectetur, nam nihil dolores repellendus 
+                    explicabo suscipit quo doloremque numquam nemo vitae ullam!
                     </p>
                 </Container>
             </Jumbotron>

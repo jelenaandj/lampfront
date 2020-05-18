@@ -29,7 +29,7 @@ export default function Login() {
                 alert(data.message);
             }else{
                 tokenLogin(data.token);
-                console.log(data.token);
+                // console.log(data.token);
                 history.push('/products');
                 // window.location.reload(false);
             }});

@@ -37,7 +37,7 @@ export default function ProductDets({match}) {
 
     return (
         <div className='productDets'>
-            <img src={product.picture} alt={'img'} style={{width:'400px',height:'400px'}}/>
+            <img src={product.picture} alt={'img'} className='dets-img'/>
             <div className='details'>
             <p>{name}</p>
             <p style={{color:'red'}}>{sale? `${sale}% discount`: ''} </p>
