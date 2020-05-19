@@ -41,7 +41,7 @@ export default function Cart() {
     return (
         <div className='cart-div' >
             <div>
-                <Form className='form-div'  style={{width:'70%',marginLeft:'100px'}}>
+            {cart.length >0 &&    <Form className='form-div'  style={{width:'70%',marginLeft:'100px'}}>
                     <Form.Row>
                         <Form.Group as={Col} controlId="validationCustom01">
                         <Form.Label>Full name</Form.Label>
@@ -74,7 +74,7 @@ export default function Cart() {
                     <Form.Group id="formGridCheckbox">
                         <Form.Check type="checkbox" label="Subscribe to our newsletter and stay updated" />
                     </Form.Group>
-                </Form>
+                </Form>}
         </div>
             <div className='cart-map'>
                 {cart!==null ?
