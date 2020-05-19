@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import {CartContext} from '../App';
 import { updateCart } from '../services/api';
-import { useEffect } from 'react';
+
 
 
 
@@ -35,7 +35,7 @@ export default function CartItem(props) {
             <tbody>
                 <tr>
                 <td>#{index+1}</td>
-                <td style={{width:'200px'}}>name: {name}</td>
+                <td >name: {name}</td>
                 <td>1 pc</td>
                 <td>{price}$</td>
                 <td style={{backgroundColor:'white',textAlign:'center'}}>
