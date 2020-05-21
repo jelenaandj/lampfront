@@ -1,9 +1,13 @@
-const BASE_URL = 'https://lamp-shop.herokuapp.com';
+// const BASE_URL = 'https://lamp-shop.herokuapp.com';
+const BASE_URL = 'http://localhost:5000';
+
 const PRODUCTS='/api/products';
 const REGISTER='/api/user/register';
 const LOGIN='/api/user/login';
 const USER='/api/user';
-const UPDATE='/update'
+const UPDATE='/update';
+const ORDERS='/api/orders';
+const DELETE='/api/user/delete';
 
 export const getAllProducts = () => {
     return fetch(`${BASE_URL}${PRODUCTS}`)
@@ -53,6 +57,32 @@ export const getUser=(token)=>{
         'Content-Type':'application/json; charset=UTF-8' ,
         'auth-token':token},
         body: JSON.stringify({cart})
+    }).then(function (response) {
+      return response.json();
+  })
+  ;}
+
+  /////order
+  export const updateOrder=(token,cart)=>{
+    return fetch(`${BASE_URL}${ORDERS}`, {
+      method:'POST' ,
+      headers:{
+        'Content-Type':'application/json; charset=UTF-8' ,
+        'auth-token':token},
+        body: JSON.stringify({cart})
+    }).then(function (response) {
+      return response.json();
+  })
+  ;}
+
+  ////delete cart
+  export const deleteCart=(token)=>{
+    return fetch(`${BASE_URL}${DELETE}`, {
+      method:'POST' ,
+      headers:{
+        'Content-Type':'application/json; charset=UTF-8' ,
+        'auth-token':token}
+        // body: JSON.stringify({cart})
     }).then(function (response) {
       return response.json();
   })

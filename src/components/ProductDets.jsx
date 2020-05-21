@@ -20,6 +20,7 @@ export default function ProductDets({match}) {
         getOneProduct(match.params.id).then(data=>{
             setProduct(data.data);
         });
+        // eslint-disable-next-line
     },[]);
 
     const{name,description,_id, price,sale}=product;

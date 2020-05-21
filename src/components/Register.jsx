@@ -25,7 +25,7 @@ export default function Register() {
 
             register({name,email,password}).then(data=> {
                 // console.log(data);
-                if(data.success==false){
+                if(data.success===false){
                     alert(data.message);
                 }
             });

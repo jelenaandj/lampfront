@@ -25,7 +25,7 @@ export default function Login() {
         try {
             await login(email,password).then(data=>
             {console.log(data)
-            if(data.success==false){
+            if(data.success===false){
                 alert(data.message);
             }else{
                 tokenLogin(data.token);
