@@ -1,5 +1,5 @@
-// const BASE_URL = 'https://lamp-shop.herokuapp.com';
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://lamp-shop.herokuapp.com';
+// const BASE_URL = 'http://localhost:5000';
 
 const PRODUCTS='/api/products';
 const REGISTER='/api/user/register';
@@ -63,13 +63,13 @@ export const getUser=(token)=>{
   ;}
 
   /////order
-  export const updateOrder=(token,cart)=>{
+  export const updateOrder=(token,name,address,countryCity,zip,newsletter,cart)=>{
     return fetch(`${BASE_URL}${ORDERS}`, {
       method:'POST' ,
       headers:{
         'Content-Type':'application/json; charset=UTF-8' ,
         'auth-token':token},
-        body: JSON.stringify({cart})
+        body: JSON.stringify({name,address,countryCity,zip,newsletter,cart})
     }).then(function (response) {
       return response.json();
   })
