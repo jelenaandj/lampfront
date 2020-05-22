@@ -27,7 +27,7 @@ export default function Cart() {
    },[deleted]);
 //    console.log(cart);
 
-  if(cart!==null) {
+  if(cart!==null && cart!==undefined) {
       if(deleted!==undefined && deleted!==false){
         setDeleted(false)
       }
@@ -35,8 +35,8 @@ export default function Cart() {
     }
 
     const handleBuy=(e)=>{
-        if(cart<1){
-            alert('cart is empty')
+        if(cart===undefined || cart.length<1  ){
+           return alert('cart is empty')
         }else{
             // let empty=[];
             // setCart(empty);
@@ -61,10 +61,6 @@ export default function Cart() {
                     }
                 });
                 });
-               
-                
-
-
             } catch (error) {
                 alert('Order has not been made, try again')
             }
@@ -74,7 +70,7 @@ export default function Cart() {
     return (
         <div className='cart-div' >
             <div>
-            {cart.length >0 &&    <Form className='form-div'  style={{width:'70%',marginLeft:'100px'}}>
+            {cart!==undefined && cart.length >0 &&    <Form className='form-div'  style={{width:'70%',marginLeft:'100px'}}>
                     <Form.Row>
                         <Form.Group as={Col} onChange={e=> setName(e.target.value)} controlId="validationCustom01">
                         <Form.Label >Full name</Form.Label>
@@ -104,7 +100,7 @@ export default function Cart() {
                 </Form>}
         </div>
             <div className='cart-map'>
-                {cart!==null ?
+                {cart!==null && cart!==undefined?
                 cart.map((product,index)=><CartItem  product={product} setDeleted={setDeleted} token={token} key={index} index={index} />):''}
                 <div>
                     Total: {total}$

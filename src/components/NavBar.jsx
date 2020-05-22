@@ -54,7 +54,7 @@ const{cart}=useContext(CartContext);
                <Link style={{marginRight:'10px'}} to='/cart'>
                   <li ><img src='cart.png' alt='img' style={{width:'40px'}}></img>
                   <label style={{color:'red', fontWeight:'bold',fontSize:'smaller'}}>
-                { cart!==null? cart.length : ''}</label>
+                { cart!==null && cart!==undefined? cart.length : ''}</label>
                   </li>
                 
                 </Link>

@@ -27,7 +27,7 @@ export default function ProductDets({match}) {
 
     const handleSubmit=(e)=>{
         
-        if(cart!==null){
+        if(cart!==null && cart!==undefined){
         // updateCart(token,name,price,_id);
         let tmp=[...cart];
         tmp.push({_id,name,price});
