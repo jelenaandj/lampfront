@@ -6,7 +6,8 @@ import {Link} from 'react-router-dom';
 export default function Home() {
 
     return (
-        <div className='home' >
+        <div className='home' style={{position:'relative'}} >
+            <img alt='alt' src={'lampforhome.jpg'} style={{position:'absolute', width:'100%', display:'block'}} ></img>
             <Card className="text-center">
                     <Card.Body>
                         <Card.Title>NEW</Card.Title>

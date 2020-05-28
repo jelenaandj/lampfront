@@ -24,7 +24,10 @@
 
 } 
 
-
+.home img{
+  filter:sepia(30%);
+  /* filter:opacity(70%); */
+}
 
 .nav :link{
   text-decoration: none;

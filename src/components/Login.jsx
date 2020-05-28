@@ -24,7 +24,7 @@ export default function Login() {
     const handleLogin=async()=>{
         try {
             await login(email,password).then(data=>
-            {console.log(data)
+            {
             if(data.success===false){
                 alert(data.message);
             }else{
