@@ -12,6 +12,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
     "uuidv4": "^6.0.8"
   },
   "scripts": {
@@ -34,5 +35,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }, "homepage": "https://jelenaandj.github.io/lampfront"
+  },
+  "homepage": "https://jelenaandj.github.io/lampfront"
 }
