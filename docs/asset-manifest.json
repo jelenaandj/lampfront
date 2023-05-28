@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/lampfront/static/css/main.f08e6f88.chunk.css",
+    "main.js": "/lampfront/static/js/main.9499cac4.chunk.js",
+    "main.js.map": "/lampfront/static/js/main.9499cac4.chunk.js.map",
+    "runtime-main.js": "/lampfront/static/js/runtime-main.18feb02a.js",
+    "runtime-main.js.map": "/lampfront/static/js/runtime-main.18feb02a.js.map",
+    "static/css/2.69121389.chunk.css": "/lampfront/static/css/2.69121389.chunk.css",
+    "static/js/2.5c101a7e.chunk.js": "/lampfront/static/js/2.5c101a7e.chunk.js",
+    "static/js/2.5c101a7e.chunk.js.map": "/lampfront/static/js/2.5c101a7e.chunk.js.map",
+    "index.html": "/lampfront/index.html",
+    "precache-manifest.3cd80ba08fd99d2b79e63ab18d5276f3.js": "/lampfront/precache-manifest.3cd80ba08fd99d2b79e63ab18d5276f3.js",
+    "service-worker.js": "/lampfront/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/lampfront/static/css/2.69121389.chunk.css.map",
+    "static/css/main.f08e6f88.chunk.css.map": "/lampfront/static/css/main.f08e6f88.chunk.css.map",
+    "static/js/2.5c101a7e.chunk.js.LICENSE.txt": "/lampfront/static/js/2.5c101a7e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18feb02a.js",
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.5c101a7e.chunk.js",
+    "static/css/main.f08e6f88.chunk.css",
+    "static/js/main.9499cac4.chunk.js"
+  ]
+}
